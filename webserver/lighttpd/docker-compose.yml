@@ -1,0 +1,10 @@
+version: '3.3'
+
+services:
+  web:
+    image: sebp/lighttpd
+    tty: true
+    ports:
+      - 80:80
+    volumes:
+      - ../public/:/var/www/localhost/htdocs/
