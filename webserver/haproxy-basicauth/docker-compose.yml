@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  haproxy-basic-auth:
+    image: "haproxy:2.4"
+    volumes:
+      - "./haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg"
+    network_mode: "host"
+#    networks:
+#      - intranet
+
+#networks:
+#  intranet:
+#    external: true
